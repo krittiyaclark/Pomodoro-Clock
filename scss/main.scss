@@ -5,6 +5,7 @@
 
 body {
   background-color: $background-color;
+  color: $font-color;
 }
 
 #controls{
@@ -12,4 +13,76 @@ body {
   margin: 40px auto;
   overflow: hidden;
   color: $font-color;
+}
+
+.control-wrapper{
+  float: left;
+  font-family: 'Arial';
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  width: 150px;
+}
+
+.control{
+  text-align: center;
+  font-size: 25px;
+  margin: 15px;
+
+  .control>div {
+    float: left;
+    width: 40px;
+  }
+}
+
+.control .plus, .control .minus{
+  cursor: pointer;
+}
+
+.control .plus:hover, .control .minus:hover{
+  color: $coral;
+}
+
+.circle {
+  width: 306px;
+  height: 306px;
+  border: 2px solid $yellow;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.clock {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+
+    p {
+      font-family: 'Arial';
+      font-size: 48px;
+      font-weight: normal;
+      color: $font-color;
+      position: absolute;
+      z-index: 20;
+      text-align: center;
+      width: 200px;
+
+      &.name {
+        top :30px;
+        left: 50px;
+      }
+
+      &.value{
+        top: 150px;
+        left: 50px;
+      }
+
+    }
+
 }
