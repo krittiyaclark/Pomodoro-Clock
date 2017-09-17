@@ -1,18 +1,38 @@
 @import '_variables';
 @import 'mixins';
 
+
+//######### Setup #########//
+
+h1 {font-family: $font-h1;}
+h2 {font-family: $font-h4;}
+a {
+  color: $white;
+  text-decoration: none;
+  }
+
 //######### Main Body #########//
 
 body {
   background-color: $background-color;
-  color: $font-color;
+  color: $white;
 }
+
+header {
+  text-align: center;
+
+  h2 {
+    color: $yellow-green;
+  }
+}
+
+//######### Control #########//
 
 #controls{
   width: 300px;
   margin: 40px auto;
   overflow: hidden;
-  color: $font-color;
+  color: $white;
 }
 
 .control-wrapper{
@@ -67,7 +87,7 @@ body {
       font-family: 'Arial';
       font-size: 48px;
       font-weight: normal;
-      color: $font-color;
+      color: $white;
       position: absolute;
       z-index: 20;
       text-align: center;
@@ -85,4 +105,10 @@ body {
 
     }
 
+}
+
+//######### Footer #########//
+
+footer {
+  text-align: center;
 }
