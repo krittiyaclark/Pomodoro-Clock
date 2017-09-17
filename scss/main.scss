@@ -1,0 +1,15 @@
+@import '_variables';
+@import 'mixins';
+
+//######### Main Body #########//
+
+body {
+  background-color: $background-color;
+}
+
+#controls{
+  width: 300px;
+  margin: 40px auto;
+  overflow: hidden;
+  color: $font-color;
+}

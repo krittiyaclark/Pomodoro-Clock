@@ -1,0 +1,39 @@
+/*
+Error: Invalid CSS after "<": expected "{", was "!doctype html>"
+        on line 1 of /Users/krittiyatuethong/Documents/GIT/Pomodoro/index.html
+
+1: <!doctype html>
+2: <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+3: <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+4: <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+5: <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+6:     <head>
+
+Backtrace:
+/Users/krittiyatuethong/Documents/GIT/Pomodoro/index.html:1
+/usr/local/rvm/gems/ruby-2.2.2@global/gems/sass-3.5.1/lib/sass/scss/parser.rb:1278:in `expected'
+/usr/local/rvm/gems/ruby-2.2.2@global/gems/sass-3.5.1/lib/sass/scss/parser.rb:1208:in `expected'
+/usr/local/rvm/gems/ruby-2.2.2@global/gems/sass-3.5.1/lib/sass/scss/parser.rb:1203:in `tok!'
+/usr/local/rvm/gems/ruby-2.2.2@global/gems/sass-3.5.1/lib/sass/scss/parser.rb:677:in `block'
+/usr/local/rvm/gems/ruby-2.2.2@global/gems/sass-3.5.1/lib/sass/scss/parser.rb:670:in `ruleset'
+/usr/local/rvm/gems/ruby-2.2.2@global/gems/sass-3.5.1/lib/sass/scss/parser.rb:696:in `block_child'
+/usr/local/rvm/gems/ruby-2.2.2@global/gems/sass-3.5.1/lib/sass/scss/parser.rb:686:in `block_contents'
+/usr/local/rvm/gems/ruby-2.2.2@global/gems/sass-3.5.1/lib/sass/scss/parser.rb:137:in `stylesheet'
+/usr/local/rvm/gems/ruby-2.2.2@global/gems/sass-3.5.1/lib/sass/scss/parser.rb:41:in `parse'
+/usr/local/rvm/gems/ruby-2.2.2@global/gems/sass-3.5.1/lib/sass/engine.rb:414:in `_to_tree'
+/usr/local/rvm/gems/ruby-2.2.2@global/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.2.2@global/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.2.2@global/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:391:in `run'
+/usr/local/rvm/gems/ruby-2.2.2@global/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/local/rvm/gems/ruby-2.2.2@global/gems/sass-3.5.1/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/rvm/gems/ruby-2.2.2@global/gems/sass-3.5.1/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/rvm/gems/ruby-2.2.2@global/gems/sass-3.5.1/bin/sass:13:in `<top (required)>'
+/usr/local/rvm/rubies/ruby-2.2.2/bin/sass:23:in `load'
+/usr/local/rvm/rubies/ruby-2.2.2/bin/sass:23:in `<main>'
+/usr/local/rvm/gems/ruby-2.2.2@global/bin/ruby_executable_hooks:15:in `eval'
+/usr/local/rvm/gems/ruby-2.2.2@global/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"<\": expected \"{\", was \"!doctype html>\"\A         on line 1 of /Users/krittiyatuethong/Documents/GIT/Pomodoro/index.html\A \A 1: <!doctype html>\A 2: <!--[if lt IE 7]>      <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\" lang=\"\"> <![endif]-->\A 3: <!--[if IE 7]>         <html class=\"no-js lt-ie9 lt-ie8\" lang=\"\"> <![endif]-->\A 4: <!--[if IE 8]>         <html class=\"no-js lt-ie9\" lang=\"\"> <![endif]-->\A 5: <!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"\"> <!--<![endif]-->\A 6:     <head>"; }
