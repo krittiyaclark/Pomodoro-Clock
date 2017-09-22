@@ -71,7 +71,7 @@ header {
   margin: 0 auto;
   position: relative;
 
-  .value2 {
+  .value {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -104,11 +104,11 @@ header {
         top :30px;
         left: 50px;
       }
-
-      &.value{
-        top: 150px;
-        left: 50px;
-      }
+      // 
+      // &.value{
+      //   top: 150px;
+      //   left: 50px;
+      // }
 
     }
 

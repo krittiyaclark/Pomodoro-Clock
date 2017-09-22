@@ -1,40 +1,67 @@
 var minutes1 = 5,
-    minutes2 = 25,
+    minutes = 25,
     seconds = 0,
-    isPaused = true,
-    timerId = 0,
+    beginTimer,
+    pauseTimer,
     //count = 0,
     remainingTime,
     countdownHandle,
-    plus = $('plus'),
-    show = $('value'),
+    // plus = $('plus'),
+    // show = $('value'),
     audio = new Audio('./sounds/beep.mp3');
 
-function startAlarm(){
-  if(remainingTime<1000)
-  {
-    audio.play();
-  }
-}
-
-  $('.plus2').on('click', function(){
-    minutes2++;
-    $('.value2').html(minutes2);
+  $('.plus').on('click', function(){
+    minutes++;
+    $('.value').html(minutes);
   });
 
-  $('.minus2').on('click', function(){
-      minutes2++;
-      $('.value2').html(minutes2);
-    });
-
-
+  $('.minus').on('click', function(){
+      minutes++;
+      $('.value').html(minutes);
+  });
 
    $('.plus1').on('click', function(){
     minutes1++;
     $('.value1').html(minutes1);
-  });
+   });
 
-  $('.minus1').on('click', function(){
+   $('.minus1').on('click', function(){
       minutes1--;
       $('.value1').html(minutes1);
-    });
+   });
+
+   $('.clock').on('click', function(){
+     startTimer();
+     name.innerHTML = 'Start Secession';
+   });
+
+   $('.clock').on('dblclick', reset);
+
+   function reset(){
+     clearInterval(timer);
+     seconds = 0;
+     minutes = 0;
+     time.innerHTML = (minutes < 10 ? '0' : '') + minutes + ':' + (seconds < 10? '0' : '') +seconds
+   }
+
+   function timer(){
+     seconds++
+     if(seconds == 60){
+       seconds = 0;
+       minutes++
+     }
+     time.innerHTML = (minutes < 10 ? '0' : '') + minutes + ':' + (seconds < 10? '0' : '') +seconds
+   }
+
+   function startTimer(){
+      clearInterval(timer);
+      beginTimer = setInterval(timer, 100);
+
+   }
+
+   function startAlarm(){
+     if(startTimer<1000)
+     {
+       audio.play();
+     }
+   }
